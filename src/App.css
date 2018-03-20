@@ -1,0 +1,160 @@
+.block {
+  display: block;
+}
+
+.zero-left {
+  left: 0px;
+}
+
+.small {
+  opacity: 1;
+  font-size: 50px;
+  margin-left: auto;
+}
+
+.iconlist {
+  padding-top: 3.3em
+}
+
+.iconlist > li {
+  text-align: center;
+  background-color: #fff;
+  width: 153px;
+  height: 83px;
+  vertical-align: top;
+  margin: 0 14px 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.4em;
+  font-weight: 700;
+  left: 0;
+  top: 0;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+  transition: opacity .6s;
+  border-radius: 5px;
+  border: 2px solid #efefef;
+  background-color: #fff;
+  transition: all .3s, opacity .6s
+}
+
+.iconlist > li:hover, .iconlist > li.active {
+  background-color: #fff;
+  border-color: #2480fe;
+  transition: opacity .6s
+}
+
+.iconlist > li.active:after {
+  background-color: #23caaa;
+  border: 0;
+  content: "";
+  color: #fff;
+  font-size: 10px;
+  font-family: "Icons";
+  height: 21px;
+  left: 136px;
+  text-align: center;
+  padding: 7px 0 0 0;
+  position: absolute;
+  width: 28px;
+  top: -15px;
+  border-radius: 100%;
+  transition: background .3s;
+  transform: scale(1);
+}
+
+.iconlist > li.auto-property-bundle {
+  height: 160px;
+  float: left;
+  left: 25px
+}
+
+.iconlist > li.auto-property-bundle span:first-child {
+  color: #405e7c;
+  font-size: 11px;
+  text-transform: none;
+  display: block;
+  bottom: 32px;
+  margin: 0
+}
+
+.iconlist > li.auto-property-bundle span:first-child span {
+  width: 130px;
+  margin: 30px auto 0
+}
+
+.iconlist > li.auto-property-bundle span a {
+  font-size: 14px;
+  font-weight: 700
+}
+
+.iconlist > li.auto-property-bundle span a span {
+  padding: 30px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: 600
+}
+
+.iconlist > li.auto-property-bundle span small {
+  margin: 3px auto -3px;
+  font-size: 100px
+}
+
+.iconlist > li span:first-child a {
+  text-transform: none;
+  font-weight: 700
+}
+
+.iconlist > li span a {
+  color: #405e7c
+}
+
+.iconlist > li span small {
+  color: #2480fe;
+  display: block;
+  font-family: "Icons";
+  font-size: 100px;
+  font-weight: normal;
+  line-height: 60px;
+  width: 100px;
+  transition: color .5s, margin .3s
+}
+
+@font-face {
+  font-family: "Icons";
+  src: url("https://www.progressive.com/content/fonts/icons/icomoon.eot");
+  src: url("https://www.progressive.com/content/fonts/icons/icomoon.eot?#iefix") format("embedded-opentype"), url("https://www.progressive.com/content/fonts/icons/icomoon.svg#icomoon") format("svg"), url("https://www.progressive.com/content/fonts/icons/icomoon.woff") format("woff"), url("https://www.progressive.com/content/fonts/icons/icomoon.ttf") format("truetype")
+}
+
+body {
+  background: #f3f3f3;
+  color: #555;
+  height: 100%;
+  line-height: 1.5;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 300;
+  font-family: "Open Sans", Arial, Verdana, sans-serif
+}
+
+a {
+  color: #2480fe;
+  outline: 0;
+  text-decoration: none;
+  transition: all .3s
+}
+
+a:focus {
+  outline: -webkit-focus-ring-color none 0;
+  outline: 1px dashed #405e7c;
+  outline-offset: -2px
+}
+
+a:hover, a:active {
+  color: #0062cf;
+  text-decoration: none;
+  transition: all 0s
+}
